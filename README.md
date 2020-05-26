@@ -15,8 +15,8 @@ In other words, you should grow the tree as long as max depth = 2 is not violate
 **The following design choice in implementation purely aims to ease auto- grading on HackerRank.** 
 
 We ensure each attribute is named by a **non-negative integer**, and each class label is named by a **positive integer**. Since we are to use HackerRank for grading, we have to eliminate additional randomness and generate the deterministic results. We therefore enforce the following rule in this assignment: In the event of ties, always choose the attribute or label with the smallest value. Namely,
-• When training a DT, if splitting on either attribute X1 or X2 gives you the best Gini impurity, choose the smaller of X1 and X2.
-• In prediction, if both label L1 and L2 have the same number of training instances at a leaf node of a DT, predict the smaller of L1 and L2.
+- When training a DT, if splitting on either attribute X1 or X2 gives you the best Gini impurity, choose the smaller of X1 and X2.
+- In prediction, if both label L1 and L2 have the same number of training instances at a leaf node of a DT, predict the smaller of L1 and L2.
 
 ## Input Format and Sample
 Each input dataset contains training instances followed by test instances in a format adapted from the libsvm format. Each line has the form
